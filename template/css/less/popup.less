@@ -1,0 +1,136 @@
+.b-popup-img {
+  
+}
+
+.popup-window-titlebar {
+	
+	.popup-window-top-row .popup-window,
+	&-light .popup-window-top-row .popup-window {
+		&-left-column,
+		&-center-column,
+		&-right-column {
+			background: @gray-lightest;
+			border-bottom: none;
+		}
+	}
+}
+
+.popup-window-center-column .popup-window-titlebar {
+	border-top: 1px solid #f2f2f2;
+	font-family: "Roboto Slab","Times New Roman",serif;
+	font-size: 18pt;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 70px;
+	
+	div {
+		margin-right: 60px !important;
+		margin-left: 60px !important;
+	}
+}
+
+.popup-window {
+  border: none;
+  width: 653px;
+  
+  h1 {
+    font-size: 22pt;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  
+  &-td-img {
+    vertical-align: middle;
+    width: 40%;
+  }
+  
+  &-td-text {
+    vertical-align: top;
+    width: 60%;
+  }
+  
+  &-close-icon {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      background: data-uri( 'img/popup-close.png' ) no-repeat 0 0;
+    }
+  }
+  
+  &-buttons-hr,
+  &-top-row,
+  &-bottom-row,
+  &-right-column,
+	&-left-column {
+    display: none;
+  }
+  
+	&-content {
+    margin: 0 !important;
+    padding: 10px;
+    
+    table {
+      width: 100%;
+      min-height: 362px;
+    }
+    
+		img {
+			width: 100% !important;
+      max-height: 362px !important;
+		}
+		
+		p {
+			margin: 9pt 0;
+		}
+	}
+	
+	&-buttons {
+    margin: 0;
+    height: 0;
+	
+		.col-sm-3,
+		.col-sm-4 {
+			width: auto !important;
+			float: none !important;
+      margin-left: 40%;
+      top: -117px;
+		}
+		
+		.bx_bt_button {
+			display: inline-block;
+			margin-bottom: 0;
+			font-weight: 400;
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+			background-image: none;
+			white-space: nowrap;
+			padding: 6px 15px;
+			font-size: 10.5pt;
+			line-height: 1.72857143;
+			border: 2px solid @darken-brand-primary;
+			text-shadow: none;
+			box-shadow: none;
+			font-size: @font-size-small;
+			border-radius: 0;
+			background: #fff;
+			color: @darken-brand-primary;
+			.bj-transition( all );
+			
+			&:hover,
+			&:active,
+			&:focus {
+				outline: none;
+				background: @brand-primary;
+				color: #fff;
+				border-color: @brand-primary;
+			}
+		}
+	}
+}

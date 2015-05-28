@@ -1,0 +1,30 @@
+.bj-news {
+  
+  @media (max-width: @screen-xs-max) {
+    
+    &-line {
+      text-align: center;
+      
+      &__date {
+        display: block;
+        margin-bottom: 7px;
+      }
+    }
+    
+  }
+	
+	&-block {
+		.bj-date {
+			margin-bottom: ceil(( @line-height-computed / 2 ));
+		}
+		
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		
+		hr {
+			margin: 10px 0;
+		}
+	}
+}
