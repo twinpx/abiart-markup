@@ -205,14 +205,14 @@ module.exports = function (grunt) {
 	
 	
 
-  grunt.initConfig( configObj );
+    grunt.initConfig( configObj );
 	
-  grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask("default", [ "clean", "concat", "uglify" ]);
+    grunt.registerTask("default", [ "clean", "concat", "uglify", "less" ]);
 	//creates all color schemes files in folder /template/colors/
-  grunt.registerTask("schemes", schemesTasks );
+    grunt.registerTask("schemes", schemesTasks );
 };

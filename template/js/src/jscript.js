@@ -61,9 +61,11 @@
 
     function e() {
         a(".bj-page-header__search .glyphicon").click(function() {
-            a(this).closest(".bj-page-header__search").addClass("i-active").find("input").focus()
+            a(this).closest(".bj-page-header__search").addClass("i-active").find("input").focus();
+			a(".bj-page-header__search__input").width(a(".bj-page-header__action").innerWidth()-85);
         }), a(".bj-page-header__search__input").blur(function() {
-            a(this).val("").closest(".bj-page-header__search").removeClass("i-active")
+            a(this).val("").closest(".bj-page-header__search").removeClass("i-active");
+			a(".bj-page-header__search__input").width('0px');
         })
     }
 
